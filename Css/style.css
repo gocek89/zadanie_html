@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Navigation*/
+nav.navigation {
+    width: 100vw;
+    height: 10vh;
+    background-color: navy;
+}
+
+img.logo {
+    display: flex;
+    position: absolute;
+    left: 2vw;
+    top: 1vh;
+    height: 8vh;
+
+}
+
+div.bars {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 2vw;
+    top: 1vh;
+    width: 6vw;
+    height: 6vh;
+}
+
+div.bars div {
+    display: flex;
+    position: relative;
+    border: 1px solid white;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+div.bar1 {
+    top: 3vh;
+    width: 60%;
+}
+
+div.bar2 {
+    top: 4vh;
+    width: 60%;
+}
+
+div.bar1.rotate {
+    top: calc(4vh + 2px);
+    width: 50%;
+    transform: rotate(45deg);
+}
+
+div.bar2.rotate {
+    margin-left: 0;
+    width: 50%;
+    transform: rotate(135deg);
+}
+
+div.menu {
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    top: 10vh;
+    left: 150vw;
+    width: 25%;
+    height: 91vh;
+    background-color: rgba(1, 1, 1, 0.7);
+    transition: 1s;
+    z-index: 10;
+
+}
+
+div.menu.active {
+    left: 75%;
+
+}
+
+div.menu ul {
+    list-style: none;
+    font-weight: bold;
+    font-size: 5vh;
+    padding-top: 3vh;
+}
+
+div.menu li {
+    margin-top: 2vh;
+}
+
+div.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Main website*/
+
+h1.welcome {
+    font-size: 3em;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+header img {
+    margin-top: 5vh;
+    margin-left: 40vw;
+    width: 20vw;
+}
+
+header h2 {
+    font-size: 2em;
+    margin: 3vh 0 1vh 2vh
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0 0 1vh 2vh;
+}
+
+ul {
+    position: absolute;
+    left: 2vh;
+
+}
+
+li {
+    list-style: none;
+}
+
+form {
+    position: absolute;
+    left: 42vw;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 1vh 2vw;
+    border: 1px solid black;
+    background-color: navy;
+    position: absolute;
+    bottom: 8vh;
+    right: 30vw;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
